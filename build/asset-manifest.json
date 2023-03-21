@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0eb61d07.css",
+    "main.js": "/static/js/main.ea6fbd15.js",
+    "static/js/787.7505aaee.chunk.js": "/static/js/787.7505aaee.chunk.js",
+    "static/media/cloraInside.jpg": "/static/media/cloraInside.35b391594d9bfa2cecec.jpg",
+    "index.html": "/index.html",
+    "main.0eb61d07.css.map": "/static/css/main.0eb61d07.css.map",
+    "main.ea6fbd15.js.map": "/static/js/main.ea6fbd15.js.map",
+    "787.7505aaee.chunk.js.map": "/static/js/787.7505aaee.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0eb61d07.css",
+    "static/js/main.ea6fbd15.js"
+  ]
+}
