@@ -86,19 +86,53 @@ html {
   margin-bottom: 10px;
   font-size: 28px;
   -webkit-text-stroke: 0;
-  color: #f8f8f8;
+  color: var(--smoky-black);
 }
-.table-stock-item span {
+.stock-table2 {
   margin-right: 40px;
   padding: 0;
   width: 170px;
   text-align: center;
   font-size: 22px;
   font-weight: bold;
-  background: #f97206;
+  background-color: #ffcc99;
   border: 3px solid var(--smoky-black);
   border-radius: 10px;
-}
+} 
+.stock-table4 {
+  margin-right: 40px;
+  padding: 0;
+  width: 170px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  background-color: #ccff99;
+  border: 3px solid var(--smoky-black);
+  border-radius: 10px;
+} 
+.stock-table6 {
+  margin-right: 40px;
+  padding: 0;
+  width: 170px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  background-color: #99ccff;
+  border: 3px solid var(--smoky-black);
+  border-radius: 10px;
+} 
+.stock-specialTable {
+  margin-right: 40px;
+  padding: 0;
+  width: 170px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  background-color: palevioletred;
+  border: 3px solid var(--smoky-black);
+  border-radius: 10px;
+} 
+
 .table-stock-item input {
   border: 3px solid;
   border-radius: 10px;

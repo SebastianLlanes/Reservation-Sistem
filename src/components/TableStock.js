@@ -63,55 +63,59 @@ const TableStock = ({ tables, onTablesUpdate }) => {
       <h2>Stock de Mesas</h2>
       <div className="table-stock-list">
         <div className="table-stock-item">
-          <span>Mesas de 2</span>
+          <span className="stock-table2">Mesas de 2</span>
           {editable ? (
             <input
+              className="stock-table2"
               type="number"
               name="table2"
               value={!isNaN(editedTables.table2) ? editedTables.table2 : ''}
               onChange={handleChange}
             />
           ) : (
-            <span>{tables.table2}</span>
+            <span className="stock-table2">{tables.table2}</span>
           )}
         </div>
         <div className="table-stock-item">
-          <span>Mesas de 4</span>
+          <span className="stock-table4">Mesas de 4</span>
           {editable ? (
             <input
+              className="stock-table4"
               type="number"
               name="table4"
               value={!isNaN(editedTables.table4) ? editedTables.table4 : ''}
               onChange={handleChange}
             />
           ) : (
-            <span>{tables.table4}</span>
+            <span className="stock-table4">{tables.table4}</span>
           )}
         </div>
         <div className="table-stock-item">
-          <span>Mesas de 6</span>
+          <span className="stock-table6">Mesas de 6</span>
           {editable ? (
             <input
+              className="stock-table6"
               type="number"
               name="table6"
               value={!isNaN(editedTables.table6) ? editedTables.table6 : ''}
               onChange={handleChange}
             />
           ) : (
-            <span>{tables.table6}</span>
+            <span className="stock-table6">{tables.table6}</span>
           )}
         </div>
         <div className="table-stock-item">
-          <span>Especiales</span>
+          <span className="stock-specialTable">Especiales</span>
           {editable ? (
             <input
+              className="stock-specialTable"
               type="number"
               name="specialTable"
               value={!isNaN(editedTables.specialTable) ? editedTables.specialTable : ''}
               onChange={handleChange}
             />
           ) : (
-            <span>{tables.specialTable}</span>
+            <span className="stock-specialTable">{tables.specialTable}</span>
           )}
         </div>
       </div>
