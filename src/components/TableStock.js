@@ -1,58 +1,32 @@
-// import React from "react";
-
-// const TableStock = ({ tables }) => {
-//   const isStockZero = Object.values(tables).some((value) => value === 0);
-//   return (
-//     <div className="table-stock">
-//       <h2>Stock de Mesas</h2>
-//       <div className="table-stock-list">
-//         <div className="table-stock-item">
-//           <span>Mesas de 2</span>
-//           <span>{tables.table2}</span>
-//         </div>
-//         <div className="table-stock-item">
-//           <span>Mesas de 4</span>
-//           <span>{tables.table4}</span>
-//         </div>
-//         <div className="table-stock-item">
-//           <span>Mesas de 6</span>
-//           <span>{tables.table6}</span>
-//         </div>
-//         <div className="table-stock-item">
-//           <span>Especiales</span>
-//           <span>{tables.specialTable}</span>
-//         </div>
-//       </div>
-//       {isStockZero && (
-//        <div className="alert-tables">Ya no hay mesas disponibles de algún tipo!</div>
-//       )}
-//     </div>
-//   );
-// };
-
-// export default TableStock;
 import React, { useState } from "react";
 
 const TableStock = ({ tables, onTablesUpdate }) => {
+
+  // Utilizamos el hook de estado "useState" para definir el estado "editable" y "editedTables"
   const [editable, setEditable] = useState(false);
   const [editedTables, setEditedTables] = useState(tables);
 
+  // Utilizamos el método "some" de Object para verificar si el stock de alguna mesa es cero
   const isStockZero = Object.values(tables).some((value) => value === 0);
 
+  // Definimos el manejador de evento "handleEdit", que establece el estado "editable" a true
   const handleEdit = () => {
     setEditable(true);
   };
 
+  // Definimos el manejador de evento "handleSave", que llama a "onTablesUpdate" y establece "editable" a false
   const handleSave = () => {
     onTablesUpdate(editedTables);
     setEditable(false);
   };
 
+  // Definimos el manejador de evento "handleCancel", que establece "editable" a false y "editedTables" a "tables"
   const handleCancel = () => {
     setEditable(false);
     setEditedTables(tables);
   };
 
+  // Definimos el manejador de evento "handleChange", que actualiza el estado "editedTables" con los valores ingresados en el formulario
   const handleChange = (event) => {
     const { name, value } = event.target;
     setEditedTables({ ...editedTables, [name]: parseInt(value) });
