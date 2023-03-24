@@ -46,6 +46,15 @@ html {
 .container h2 {
   font-size: 44px;
 }
+.save-button {
+  width: 180px;
+  height: 32px;
+  border: 3px solid black;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #0f0f0f;
+  background-color: #f97206;
+  font-family: var(--font-family-descriptions);
+}
 .form-container {
   display: flex;
   flex-direction: column;
