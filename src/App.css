@@ -52,8 +52,9 @@ html {
   border: 3px solid black;
   border-radius: 10px;
   box-shadow: 5px 5px 10px #0f0f0f;
-  background-color: #f97206;
+  background-color: #99ccff;
   font-family: var(--font-family-descriptions);
+  font-size: 16px;
 }
 .form-container {
   display: flex;
@@ -70,14 +71,24 @@ html {
   font-size: 20px;
   font-weight: 100;
 }
+.form-container textarea {
+  width: 370px;
+  height: 108px;
+  margin-bottom: 5px;
+  box-shadow: 2px 2px 10px;
+  font-family: var(--font-family-descriptions);
+  font-size: 20px;
+  font-weight: 100;
+}
 .form-container button {
   width: 180px;
   height: 32px;
   border: 3px solid black;
   border-radius: 10px;
   box-shadow: 5px 5px 10px #0f0f0f;
-  background-color: #f97206;
+  background-color: #99ccff;
   font-family: var(--font-family-descriptions);
+  font-size: 16px;
 }
 .table-stock {
   display: flex;
@@ -158,8 +169,9 @@ html {
   border: 3px solid black;
   border-radius: 10px;
   box-shadow: 5px 5px 10px #0f0f0f;
-  background-color: #f97206;
+  background-color: #99ccff;
   font-family: var(--font-family-descriptions);
+  font-size: 16px;
 }
 .reservation-list {
   display: contents;   /*direccionamiento de las cards*/
@@ -238,4 +250,15 @@ html {
 }
 .alert-tables {
   background-color: #ff0014;
+}
+.download-reservas {
+  width: 180px;
+  height: 50px;
+  border: 3px solid black;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #0f0f0f;
+  background-color: #99ccff;
+  font-family: var(--font-family-descriptions);
+  font-size: 16px;
+  -webkit-text-stroke: 1px #000;
 }

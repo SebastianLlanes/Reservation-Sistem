@@ -100,11 +100,11 @@ const TableStock = ({ tables, onTablesUpdate }) => {
       )}
       {editable ? (
         <div>
-          <button onClick={handleSave}>Guardar</button>
-          <button onClick={handleCancel}>Cancelar</button>
+          <button onClick={handleSave}>GUARDAR</button>
+          <button onClick={handleCancel}>CANCELAR</button>
         </div>
       ) : (
-        <button onClick={handleEdit}>Editar</button>
+        <button onClick={handleEdit}>EDITAR</button>
       )}
     </div>
   );

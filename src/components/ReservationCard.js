@@ -34,6 +34,7 @@ const ReservationCard = ({ reservation, cancelReservation }) => {
       <p>Día: {reservation.date}</p>
       <p>Hora: {reservation.time}</p>
       <p>Teléfono: {reservation.phone}</p>
+      <p>Notas: {reservation.notes}</p>
       <button onClick={handleCancelClick}>Cancelar Reserva</button>
     </div>
   );

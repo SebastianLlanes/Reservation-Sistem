@@ -10,13 +10,14 @@ const ReservationForm = ({ addReservation }) => {
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
   const [phone, setPhone] = useState("");
+  const [notes, setNotes] = useState("");
  
   // Declarar una función que se ejecutará cuando se envíe el formulario
   const handleSubmit = (e) => {
     // Prevenir que la página se recargue al enviar el formulario
     e.preventDefault();
     // Crear un objeto de reserva con los valores actuales de cada estado y un id generado
-    const reservation = { id: generateId(), name, guests, date, time, phone };
+    const reservation = { id: generateId(), name, guests, date, time, phone, notes };
     // Llamar a la función addReservation pasando la reserva como argumento
     addReservation(reservation);
     // Reiniciar cada estado a su valor inicial
@@ -25,6 +26,7 @@ const ReservationForm = ({ addReservation }) => {
     setDate("");
     setTime("");
     setPhone("");
+    setNotes("");
   };
   
   // Declarar una función que genera un id único basado en la fecha actual
@@ -66,7 +68,12 @@ const ReservationForm = ({ addReservation }) => {
         value={phone}
         onChange={(e) => setPhone(e.target.value)}
       />
-      <button>Agregar Reserva</button>
+      <textarea 
+        placeholder="Notas"
+        value={notes}
+        onChange={(e) => setNotes(e.target.value)}
+      />
+      <button>AGREGAR RESERVA</button>
     </form>
   );
 };

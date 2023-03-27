@@ -124,8 +124,8 @@ const App = () => {
       <div className="container" key="reservation-container">
         <div className="app-container-container">
           <h2>Ingreso de Reserva</h2>
-            <button className="save-button" onClick={handleSaveReservations}>Guardar Reservas</button>
-            <button className="save-button" onClick={handleLoadReservations}>Cargar Reservas</button>
+            <button className="save-button" onClick={handleSaveReservations}>GUARDAR RESERVAS</button>
+            <button className="save-button" onClick={handleLoadReservations}>CARGAR RESERVAS</button>
         </div>
         <ReservationForm addReservation={addReservation} />
         <TableStock  tables={tables} onTablesUpdate={handleTablesUpdate} />
