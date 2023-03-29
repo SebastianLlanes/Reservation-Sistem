@@ -22,7 +22,6 @@ html {
 /*Background*/
   background-image: url(../src/assets/img/cloraInside.jpg);
   background-size: cover;
-  background-position: center;
 }
 .app h1 {
   text-align: center;

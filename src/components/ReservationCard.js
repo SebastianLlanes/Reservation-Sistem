@@ -23,7 +23,7 @@ const ReservationCard = ({ reservation, cancelReservation }) => {
   } else {
     tableClass = 'specialTable';
   }
-
+ 
   // Retornamos el JSX que se mostrará en la pantalla
   return (
     <div className={`reservation-card ${tableClass}`} key={reservation.id}>

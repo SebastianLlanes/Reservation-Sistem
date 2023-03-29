@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+ 
 const TableStock = ({ tables, onTablesUpdate }) => {
 
   // Utilizamos el hook de estado "useState" para definir el estado "editable" y "editedTables"

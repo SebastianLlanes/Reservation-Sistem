@@ -63,7 +63,7 @@ const App = () => {
       reservation.guests === 0 ||
       isNaN(reservation.guests)
     ) {
-      alert("La cantidad de comensales debe ser un número mayor a 0.");
+      alert("Debe ingresar una cantidad de comensales.");
     } else {
       const tableType =
         reservation.guests <= 2
